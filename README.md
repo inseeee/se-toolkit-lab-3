@@ -87,7 +87,14 @@ This and all other lab assignments will simulate real-life engineering practices
     git config --global user.email "your@email"
     ```
 
-2. Install [`VS Code`](https://code.visualstudio.com/). This is our code editor of choice that we'll use in this course.
+2. <details> <summary> (Optional) Learn more about <code>Git</code> (click to expand) </summary>
+
+   - [How Git Works: Explained in 4 Minutes](https://www.youtube.com/watch?v=e9lnsKot_SQ)
+   - [Git MERGE vs REBASE: Everything You Need to Know](https://www.youtube.com/watch?v=0chZFIZLR_0)
+
+   </details>
+
+3. Install [`VS Code`](https://code.visualstudio.com/). This is our code editor of choice that we'll use in this course.
 
     - Read about [`Basic Layout`](https://code.visualstudio.com/docs/getstarted/userinterface#_basic-layout) - Basic UI elements in `VS Code`.
 
