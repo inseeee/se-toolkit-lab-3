@@ -19,9 +19,9 @@ Then, you can check whether the web server works before the web server is deploy
 - [2. Learn about environments](#2-learn-about-environments)
 - [3. View the file `.env.no-docker.example`](#3-view-the-file-envno-dockerexample)
 - [4. Create the file `.env.secret`](#4-create-the-file-envsecret)
-  - [View the file `.env.secret`](#view-the-file-envsecret)
-  - [Run the web server using `uv` and `poe`](#run-the-web-server-using-uv-and-poe)
-- [Check `/status`](#check-status)
+- [5. View the file `.env.secret`](#5-view-the-file-envsecret)
+- [6. Run the web server using `uv` and `poe`](#6-run-the-web-server-using-uv-and-poe)
+- [7. Check `/status`](#7-check-status)
   - [Check `/status` using a browser](#check-status-using-a-browser)
   - [Check `/status` using `curl`](#check-status-using-curl)
 - [Stop the web server](#stop-the-web-server)
@@ -52,7 +52,7 @@ Read the following sections:
    cp .env.no-docker.example .env.secret
    ```
 
-### View the file `.env.secret`
+## 5. View the file `.env.secret`
 
 > [!NOTE]
 > The `.env.secret` file was added to [`.gitignore`](../../../.gitignore) because you may specify there
@@ -72,7 +72,7 @@ Method 2:
 
 1. [Open the file using the `Command Palette`](../../appendix/vs-code.md#open-a-file-using-the-command-palette): [`.env.secret`](../../../.env.no-docker.example).
 
-### Run the web server using `uv` and `poe`
+## 6. Run the web server using `uv` and `poe`
 
 > [!NOTE]
 > [`poe`](https://poethepoet.natn.io/) can run tasks
@@ -89,7 +89,7 @@ Method 2:
 > [!NOTE]
 > You will see in the output a key shortcut to stop the server such as `Ctrl+C`.
 
-## Check `/status`
+## 7. Check `/status`
 
 > [!NOTE]
 > `/status` is an [endpoint](../../appendix/web-development.md#endpoint) of the web server.
