@@ -56,9 +56,9 @@
 ## Clone the repo
 
 > [!NOTE]
-> Assume `<repo-url>` is the repo [URL](./web-development.md#url).
+> The [`<repo-url>`](./github.md#repo-url) is the repo [URL](./web-development.md#url).
 >
-> Assume `<repo-name>` is the repo name.
+> The [`<repo-name>`](./github.md#repo-name) is the repo name.
 
 - Method 1: [Clone the repo using the `VS Code Terminal`](#clone-the-repo-using-the-vs-code-terminal)
 - Method 2: [Clone the repo using the `Command Palette`](#clone-the-repo-using-the-command-palette)
