@@ -1,11 +1,11 @@
-# HTTP authentication
+# HTTP authentication and authorization
 
 <h2>Table of contents</h2>
 
-- [Authentication](#authentication)
-- [Authorization](#authorization)
+- [HTTP authentication](#http-authentication)
+- [HTTP authorization](#http-authorization)
 
-## Authentication
+## HTTP authentication
 
 Authentication is the process of verifying the identity of a client making a request to an [API](./web-development.md#api).
 
@@ -23,7 +23,7 @@ Docs:
 
 - [HTTP authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication)
 
-## Authorization
+## HTTP authorization
 
 Authorization is the process of determining whether an authenticated client has permission to access a specific [endpoint](./web-development.md#endpoint) or resource.
 
