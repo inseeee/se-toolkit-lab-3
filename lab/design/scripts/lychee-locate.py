@@ -8,6 +8,13 @@ from pathlib import Path
 
 from pydantic import BaseModel
 
+# ANSI colours — only when writing to a real terminal
+_TTY = sys.stdout.isatty()
+
+
+def _c(code: str, text: str) -> str:
+    return f"\033[{code}m{text}\033[0m" if _TTY else text
+
 
 class _Status(BaseModel):
     text: str
@@ -58,6 +65,8 @@ if not data.error_map:
     print("No broken links found.")
     sys.exit(0)
 
+total = sum(len(v) for v in data.error_map.values())
+
 for filepath, errors in data.error_map.items():
     try:
         relpath = Path(filepath).relative_to(Path.cwd())
@@ -66,7 +75,10 @@ for filepath, errors in data.error_map.items():
     for error in errors:
         loc = find_location(filepath, error.url)
         location = f"{relpath}:{loc[0]}:{loc[1]}" if loc else str(relpath)
-        print(f"{location}: [ERROR] {error.url}")
-        print(f"  {error.status.text}")
+        print(
+            f"{_c('1', location)}: {_c('1;31', '[ERROR]')} {_c('36', error.url)}"
+        )
+        print(f"  {_c('2', error.status.text)}")
 
+print(f"\n{_c('1;31', f'Found {total} broken link(s) in {len(data.error_map)} file(s).')}")
 sys.exit(1)
