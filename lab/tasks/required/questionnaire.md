@@ -1,7 +1,5 @@
 # Questionnaire — API Exploration
 
-Fill in each answer below. Replace `___` with the correct value.
-
 ## Items endpoints
 
 ### GET /items
@@ -10,7 +8,7 @@ Fill in each answer below. Replace `___` with the correct value.
 2. Path: /items
 3. Status code (success): 200
 4. Status code (unauthorized): 401
-5. Response body contains: list of items
+5. Response body contains: array
 6. Response type: array
 
 ### GET /items/{item_id}
@@ -19,7 +17,7 @@ Fill in each answer below. Replace `___` with the correct value.
 2. Path: /items/{item_id}
 3. Status code (existing item): 200
 4. Status code (non-existent item): 404
-5. Response body contains: single item data
+5. Response body contains: object
 
 ### POST /items
 
@@ -34,7 +32,7 @@ Fill in each answer below. Replace `___` with the correct value.
 1. HTTP method: PUT
 2. Path: /items/{item_id}
 3. Status code (success): 200
-4. Request body contains: updated fields (title, description)
+4. Request body contains: title, description
 
 ## Authentication
 
