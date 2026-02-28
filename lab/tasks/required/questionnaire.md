@@ -4,39 +4,42 @@ Fill in each answer below. Replace `___` with the correct value.
 
 ## Items endpoints
 
-<!--
-TODO explain in the wiki what a request is
--->
-
-<!-- 
-TODO questions about what their specific request is
-- resource
-- destination
--->
-
 ### GET /items
 
 1. HTTP method: GET
 2. Path: /items
-3. Status code (success): ___
-4. Response type (array or object): ___
+3. Status code (success): 200
+4. Status code (unauthorized): 401
+5. Response body contains: list of items
 
 ### GET /items/{item_id}
 
-1. Status code (item found): ___
-2. Status code (item not found): ___
+1. HTTP method: GET
+2. Path: /items/{item_id}
+3. Status code (existing item): 200
+4. Status code (non-existent item): 404
+5. Response body contains: single item data
 
 ### POST /items
 
-1. HTTP method: ___
-2. Status code (created successfully): ___
+1. HTTP method: POST
+2. Path: /items
+3. Status code (success): 201
+4. Status code (invalid data): 422
+5. Request body contains: type, parent_id, title, description
 
 ### PUT /items/{item_id}
 
-1. HTTP method: ___
-2. Status code (updated successfully): ___
+1. HTTP method: PUT
+2. Path: /items/{item_id}
+3. Status code (success): 200
+4. Request body contains: updated fields (title, description)
 
 ## Authentication
 
-1. What happens when you call an endpoint without the API key? (status code): ___
-2. Where do you set the API key value for Docker Compose? (file name): ___
+1. Header name: Authorization
+2. Header format: Bearer <token>
+3. Default token value: my-secret-api-key
+4. Status code without token: 401
+5. Status code with invalid token: 401
+6. Status code with valid token: 200
