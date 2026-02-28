@@ -7,7 +7,7 @@
 1. HTTP method: GET
 2. Path: /items
 3. Status code: 200
-4. Status code: 401
+4. Status code (unauthorized): 401
 5. Response type: array
 
 ### GET /items/{item_id}
@@ -22,7 +22,7 @@
 1. HTTP method: POST
 2. Path: /items
 3. Status code: 201
-4. Status code: 422
+4. Status code (invalid data): 422
 5. Request body: type, parent_id, title, description
 
 ### PUT /items/{item_id}
@@ -30,7 +30,7 @@
 1. HTTP method: PUT
 2. Path: /items/{item_id}
 3. Status code: 200/400
-4. Response type: object
+4. Request body: title, description
 
 ## Authentication
 
