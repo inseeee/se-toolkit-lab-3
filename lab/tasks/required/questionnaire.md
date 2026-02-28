@@ -8,7 +8,7 @@
 2. Path: /items
 3. Status code (success): 200
 4. Status code (unauthorized): 401
-5. Response body contains: array of items
+5. Response body contains: array
 6. Response type: array
 
 ### GET /items/{item_id}
@@ -17,7 +17,7 @@
 2. Path: /items/{item_id}
 3. Status code (existing item): 200
 4. Status code (non-existent item): 404
-5. Response body contains: single item object
+5. Response body contains: object
 
 ### POST /items
 
@@ -32,7 +32,7 @@
 1. HTTP method: PUT
 2. Path: /items/{item_id}
 3. Status code (success): 200
-4. Request body contains: updated fields (title, description)
+4. Request body contains: title, description
 
 ## Authentication
 
@@ -42,3 +42,4 @@
 4. Status code without token: 401
 5. Status code with invalid token: 401
 6. Status code with valid token: 200
+7. API key file: .env.docker.secret
