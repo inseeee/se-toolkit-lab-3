@@ -6,33 +6,31 @@
 
 1. HTTP method: GET
 2. Path: /items
-3. Status code (success): 200
-4. Status code (unauthorized): 401
-5. Response body contains: array
-6. Response type: array
+3. Status code: 200
+4. Status code: 401
+5. Response type: array
 
 ### GET /items/{item_id}
 
 1. HTTP method: GET
 2. Path: /items/{item_id}
-3. Status code (existing item): 200
-4. Status code (non-existent item): 404
-5. Response body contains: object
+3. Status code: 200/404
+4. Response type: object
 
 ### POST /items
 
 1. HTTP method: POST
 2. Path: /items
-3. Status code (success): 201
-4. Status code (invalid data): 422
-5. Request body contains: type, parent_id, title, description
+3. Status code: 201
+4. Status code: 422
+5. Request body: type, parent_id, title, description
 
 ### PUT /items/{item_id}
 
 1. HTTP method: PUT
 2. Path: /items/{item_id}
-3. Status code (success): 200
-4. Request body contains: title, description
+3. Status code: 200/400
+4. Response type: object
 
 ## Authentication
 
