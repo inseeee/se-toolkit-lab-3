@@ -11,6 +11,7 @@ Fill in each answer below. Replace `___` with the correct value.
 3. Status code (success): 200
 4. Status code (unauthorized): 401
 5. Response body contains: list of items
+6. Response type: array
 
 ### GET /items/{item_id}
 
@@ -43,3 +44,4 @@ Fill in each answer below. Replace `___` with the correct value.
 4. Status code without token: 401
 5. Status code with invalid token: 401
 6. Status code with valid token: 200
+7. API key file: .env.docker.secret
